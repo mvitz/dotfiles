@@ -1,10 +1,10 @@
 # rvm related stuff
 #
 
-# adding rvm to PATH
-PATH=$PATH:~/.rvm/bin
+export RVM_HOME=~/.rvm
+PATH=$PATH:$RVM_HOME/bin
 
 if shopt -q login_shell; then
-  : # login shell
-  [[ -s "~/.rvm/scripts/rvm" ]] && source "~/.rvm/scripts/rvm"
+  [[ -s $RVM_HOME/scripts/rvm ]] && . $RVM_HOME/scripts/rvm
+  [[ -s $RVM_HOME/scripts/completion ]] && . $RVM_HOME/scripts/completion
 fi
