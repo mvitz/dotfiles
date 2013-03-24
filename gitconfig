@@ -1,0 +1,29 @@
+[user]
+  name = Michael Vitz
+  email = vitz.michael@googlemail.com
+[core]
+  editor = vi
+[mergetool]
+  tool = vimdiff
+  keepBackup = false
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[color "status"]
+  changed = yellow
+  added = green
+  untracked = red
+[alias]
+  st = status
+  di = diff
+  ds = diff --staged
+  ci = commit
+  co = checkout
+  fix = commit --amend -C HEAD
+  br = branch
+  cob = checkout -b
+  rb = rebase
+  log-me = log --author='Michael Vitz' --pretty=format:'%Cred%h%Creset %s %Cgreen(%cr)%Creset'
+  log-nice = log --graph --decorate --pretty=oneline --abbrev-commit
+  log-fancy = log --graph --pretty=format:'%Cred%h %C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
