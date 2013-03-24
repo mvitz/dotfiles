@@ -1,10 +1,10 @@
 # my custom .bashrc which should be sourced by ~/.bashrc
 #
 
-dotfile_home=~/dotfiles
+dotfile_home=~/.dotfiles
 dotfile_scripts=""
 dotfile_scripts="$dotfile_scripts cd.sh checksum.sh find.sh history.sh"
-dotfile_scripts="$dotfile_scripts ls.sh ps.sh sudo.sh"
+dotfile_scripts="$dotfile_scripts ls.sh ps.sh rvm.sh sudo.sh"
 
 sds() { [[ -f $dotfile_home/$1 ]] && source $dotfile_home/$1; }
 
