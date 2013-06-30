@@ -1,7 +1,7 @@
 # my custom .bashrc which should be sourced by ~/.bashrc
 #
 
-dotfile_home=~/.dotfiles
+dotfile_home=~/.dotfiles/bash
 dotfile_scripts=""
 dotfile_scripts="$dotfile_scripts cd.sh checksum.sh find.sh history.sh"
 dotfile_scripts="$dotfile_scripts ls.sh ps.sh rvm.sh sudo.sh"
