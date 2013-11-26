@@ -32,3 +32,5 @@
   wipe = reset --hard HEAD
   praise = blame
   ready = rebase -i @{u}
+[push]
+  default = simple
