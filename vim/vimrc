@@ -4,6 +4,8 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+execute pathogen#infect()
+
 " ================ General Config ====================
 set number "Line numbers are good
 set backspace=indent,eol,start "Allow backspace in insert mode
