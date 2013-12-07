@@ -1,40 +1,13 @@
-# DEFAULTS
+# custom .zshrc which contains basic stuff
+#
+
+# enable color support
+autoload -U colors && colors
+
+# default editors
 export EDITOR='vi'
 export VISUAL='vi'
 export PAGER='less'
-
-# LESS
-export LESS='-isMR --shift 5'
-
-# HISTORY
-#
-# $ history
-#  501 foo
-#  502 bar
-#  503 history
-#
-# !503           # history
-# !-1            # history
-# !!             # history
-# !foo           # foo
-# !?o?           # history
-# ^foo^bar^      # bar
-# !-3:s/foo/bar/ # bar
-#
-export HISTFILE=~/.zsh_history
-export HISTSIZE=20000
-export SAVEHIST=$HISTSIZE
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_SPACE
-
-# PROGRAMMABLE FILE RENAMING
-#
-# zmv '(*).txt' '$1.html'
-# zmv '(*)_(*)' '$1-$2'
-# ...
-#
-autoload -U zmv
-
 
 # EXTENDED GLOBBING AND EXPANSION
 #
@@ -43,25 +16,16 @@ autoload -U zmv
 # ls [^ab]*     # negation
 # ls (#a1)foo   # approimate matching
 # ls foo/*(#q@) # qualifiers: @=symlink, .=file, /=directory, ==socket, p=named pipe, *=executable, r=readable, w=writable, x=executable, ...
-#
-setopt extended_glob
+#setopt extended_glob
 
 # SPELL CHECKING AND AUTO CORRECTION
-setopt correct
+#setopt correct
 #export SPROMPT="Correct '%R' to '%r'? (Yes, No, Abort, Edit) # TODO: colors
 # To permanently disable auto correct for specific command use: alias foobar='nocorrect foobar'
 
-
-# EXTENDED REGULAR EXPRESSIONS
-# [[ "foobar_123" -regex-match "^([a-zA-Z0-9]+)_([0-9]+)$" ]] && echo match || echo no match
-# [[ "foobar_123" -pcre-match "^(\w+)_(\d+)$" ]] && echo match || echo no match
-#
-# pcre_compile "^(\w+)_(\d+)$"
-# pcre_match "foobar_123" && echo match || echo no match
-#
-# pcre_compile -i "^foobar\s+\d+$"
-# pcre_match "fOoBaR   123" && echo match || echo no match
-#
-# [[ "fOoBaR   123" -pcre-match "^[fF][oO]{2}[bB][aA][rR]\s+\d+$" ]] && echo match || echo no match
-zmodload zsh/regex
-zmodload zsh/pcre
+# including all specific scripts
+dotfile_zsh_home=~/.dotfiles/zsh
+for dotfile_zsh_script in $dotfile_zsh_home/*.zsh; do
+  source $dotfile_zsh_script
+done
+unset dotfile_zsh_home
