@@ -2,3 +2,6 @@
 #
 
 alias -s pdf=evince
+
+alias -g  ...='../..'
+alias -g ....='../../..'
