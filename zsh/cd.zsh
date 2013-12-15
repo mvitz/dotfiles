@@ -1,5 +1,6 @@
 # cd related stuff
 #
 
-alias ..='cd ..'
+setopt autocd
+#alias ..='cd ..'
 alias -- -='cd -'
