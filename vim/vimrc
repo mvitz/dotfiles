@@ -74,3 +74,6 @@ noremap <Up>    <NOP>
 noremap <Right> <NOP>
 noremap <Down>  <NOP>
 noremap <Left>  <NOP>
+
+" <Ctrl-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
