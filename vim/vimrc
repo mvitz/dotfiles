@@ -77,3 +77,9 @@ noremap <Left>  <NOP>
 
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+" Use solarized color scheme
+set t_Co=256
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
