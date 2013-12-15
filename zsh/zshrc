@@ -1,6 +1,9 @@
 # custom .zshrc which contains basic stuff
 #
 
+# vi keybindings
+bindkey -v
+
 # enable color support
 autoload -U colors && colors
 
