@@ -2,6 +2,7 @@
 #
 
 alias -s pdf=evince
+alias -s xml=vi
 
 alias -g    ...='../..'
 alias -g   ....='../../..'
