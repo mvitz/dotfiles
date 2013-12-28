@@ -2,8 +2,8 @@
 
 echo "Setting up vim"
 
-"$dotfiles_scripts/install-dotfile.sh" "$dotfiles_root/vim/vimrc" ~/.vimrc
+"$dotfiles_scripts/install-dotfile.sh" "$HOME/.dotfiles/vim/vimrc" ~/.vimrc
 
 mkdir ~/.vim
-"$dotfiles_scripts/install-dotfile.sh" "$dotfiles_root/vim/pathogen/autoload" ~/.vim/autoload
-"$dotfiles_scripts/install-dotfile.sh" "$dotfiles_root/vim/bundle" ~/.vim/bundle
+"$dotfiles_scripts/install-dotfile.sh" "$HOME/.dotfiles/vim/pathogen/autoload" ~/.vim/autoload
+"$dotfiles_scripts/install-dotfile.sh" "$HOME/.dotfiles/vim/bundle" ~/.vim/bundle

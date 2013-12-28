@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export dotfiles_root=$(cd "$(dirname "$0")"; pwd -P)
+dotfiles_root=$(cd "$(dirname "$0")"; pwd -P)
 export dotfiles_scripts=$dotfiles_root/scripts
 
 ln -s $dotfiles_root ~/.dotfiles
