@@ -28,7 +28,10 @@ export PAGER='less'
 
 # including all specific scripts
 dotfile_zsh_home=~/.dotfiles/zsh
-for dotfile_zsh_script in $dotfile_zsh_home/*.zsh; do
+if [ -r $dotfile_zsh_home/$(hostname).zsh ]; then
+  source $dotfile_zsh_home/$(hostname).zsh
+fi
+for dotfile_zsh_script in $dotfile_zsh_home/<000-999>-*.zsh; do
   source $dotfile_zsh_script
 done
 unset dotfile_zsh_home
