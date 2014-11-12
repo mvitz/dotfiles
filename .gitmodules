@@ -25,3 +25,6 @@
 [submodule "vim/bundle/vim-exchange"]
 	path = vim/bundle/vim-exchange
 	url = git://github.com/tommcdo/vim-exchange.git
+[submodule "vim/bundle/vim-clojure-static"]
+	path = vim/bundle/vim-clojure-static
+	url = https://github.com/guns/vim-clojure-static.git
