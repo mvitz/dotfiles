@@ -7,6 +7,9 @@ bindkey -v
 # enable color support
 autoload -U colors && colors
 
+# enable auto completion
+autoload -U compinit && compinit
+
 # default editors
 export EDITOR='vi'
 export VISUAL='vi'
