@@ -80,6 +80,20 @@ noremap <Left>  <NOP>
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
+" enter command mode with single keystroke
+nnoremap ; :
+nnoremap : ;
+
+" start external command with single keystroke
+nnoremap ! :!
+
+" quit insert mode with jk
+inoremap jk <Esc>
+
+" fix some misspellings
+cabbrev ew :wq
+cabbrev qw :wq
+
 " Use solarized color scheme
 set t_Co=256
 set background=dark
