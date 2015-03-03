@@ -3,6 +3,7 @@
   email = vitz.michael@googlemail.com
 [core]
   editor = vi
+  excludesfile = ~/.gitignore
 [mergetool]
   tool = vimdiff
   keepBackup = false
