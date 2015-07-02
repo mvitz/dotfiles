@@ -5,12 +5,17 @@ set -x LESS '-isMR --shift 5'
 
 set -e fish_greeting
 
-# misc
-set PATH $HOME/bin $PATH
-
 # java
 jdk 8
 
 # maven
 set -x M2_HOME /Users/mvitz/Applications/maven
 set PATH $PATH $M2_HOME/bin
+
+# chruby
+source /usr/local/share/chruby/chruby.fish
+source /usr/local/share/chruby/auto.fish
+
+# misc
+set PATH $HOME/bin $PATH
+set PATH ./bin $PATH
