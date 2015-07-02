@@ -49,3 +49,5 @@
   required = true
 [merge]
   ff = false
+[pull]
+  rebase = preserve
