@@ -35,6 +35,8 @@
   wipe = reset --hard HEAD
   praise = blame
   ready = rebase -i @{u}
+  unstage = reset HEAD --
+  restore = checkout --
 [push]
   default = simple
 [filter "media"]
