@@ -48,7 +48,7 @@ filetype plugin on
 filetype indent on
 
 " Display tabs and trailing spaces visually
-set list listchars=tab:\ \ ,trail:·
+set list listchars=trail:·,tab:»·
 
 set wrap "Wrap lines
 set linebreak "Wrap lines at convenient points
