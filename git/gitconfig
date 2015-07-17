@@ -2,6 +2,7 @@
   name = Michael Vitz
   email = vitz.michael@googlemail.com
 [core]
+  autocrlf = input
   editor = vi
   excludesfile = ~/.gitignore
 [mergetool]
