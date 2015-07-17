@@ -24,6 +24,7 @@
   co = checkout
   fix = commit --amend -C HEAD
   br = branch
+  brs = for-each-ref --sort='-authordate:iso8601' --format=' %(color:green)%(authordate:iso8601)%09%(color:white)%(refname:short)' refs/heads
   cob = checkout -b
   rb = rebase
   log-me = "!git log --author `git config user.email` --pretty=format:'%Cred%h%Creset %s %Cgreen(%cr)%Creset'"
