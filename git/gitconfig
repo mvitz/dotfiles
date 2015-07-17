@@ -52,3 +52,6 @@
   ff = false
 [pull]
   rebase = preserve
+[fetch]
+  prune = true
+
