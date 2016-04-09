@@ -1,6 +1,7 @@
 [user]
   name = Michael Vitz
   email = vitz.michael@googlemail.com
+  signingkey = 89512794
 [core]
   autocrlf = input
   editor = vi
@@ -57,4 +58,6 @@
   rebase = preserve
 [fetch]
   prune = true
+[commit]
+  gpgsign = true
 
