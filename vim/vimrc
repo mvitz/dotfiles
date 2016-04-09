@@ -77,6 +77,9 @@ noremap <Right> <NOP>
 noremap <Down>  <NOP>
 noremap <Left>  <NOP>
 
+" alias for gT
+noremap gb gT
+
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 
