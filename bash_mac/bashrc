@@ -59,10 +59,13 @@ function __prompt_command() {
 
 ### history
 shopt -s histappend
-export HISTCONTROL=ignoreboth
-export HISTSIZE=10000
-export HISTFILESIZE=20000
+shopt -s cmdhist
+export HISTCONTROL=erasedups:ignoreboth
+export HISTSIZE=500000
+export HISTFILESIZE=100000
 export PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
+export HISTIGNORE="&:[ ]*:exit:ls:l:lt:la:lat:bg:fg:history"
+export HISTFORMAT='%F %T '
 
 ### functions
 # creates the directory and changes into it
