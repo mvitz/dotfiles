@@ -33,6 +33,8 @@ alias  grep='grep --color=auto'
 alias fgrep='grep --color=auto'
 alias egrep='grep --color=auto'
 
+alias refresh='source ~/.bashrc'
+
 ### theme
 export PROMPT_COMMAND=__prompt_command
 
