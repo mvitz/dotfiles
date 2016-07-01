@@ -59,6 +59,7 @@
 [fetch]
   prune = true
 [commit]
+  template = ~/.gitcommit
   gpgsign = true
 [diff]
   compactionHeuristic = true
