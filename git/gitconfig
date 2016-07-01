@@ -29,8 +29,8 @@
   cob = checkout -b
   rb = rebase
   log-me = "!git log --author `git config user.email` --pretty=format:'%Cred%h%Creset %s %Cgreen(%cr)%Creset'"
-  log-nice = log --graph --decorate --pretty=oneline --abbrev-commit
-  log-fancy = log --graph --pretty=format:'%Cred%h %C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
+  log-nice = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  log-fancy = log --graph --pretty=format:'%Cred%h %C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --all
   standup = "!git log --author `git config user.email` --since yesterday --pretty=short"
   ignored = ls-files --others -i --exclude-standard
   wipe = reset --hard HEAD
