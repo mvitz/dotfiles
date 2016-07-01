@@ -99,8 +99,14 @@ alias java7="export JAVA_HOME=$(/usr/libexec/java_home -v1.7)"
 alias java8="export JAVA_HOME=$(/usr/libexec/java_home -v1.8)"
 java8
 
-export M2_HOME=~/Applications/maven
-export PATH="$M2_HOME/bin:$PATH"
+chmvn() {
+  export M2_HOME=/Users/mvitz/Development/apps/apache-maven-$1
+  export PATH="$M2_HOME/bin:$PATH"
+}
+alias mvn325='chmvn 3.2.5'
+alias mvn333='chmvn 3.3.3'
+mvn333
+
 
 ### postgres
 alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
