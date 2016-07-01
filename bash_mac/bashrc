@@ -110,6 +110,9 @@ mvn333
 export ANT_HOME=/Users/mvitz/Development/apps/apache-ant-1.9.6
 export PATH="$ANT_HOME/bin:$PATH"
 
+export GRAILS_HOME=/Users/mvitz/Development/apps/grails-3.1.1
+export PATH="$GRAILS_HOME/bin:$PATH"
+
 ### postgres
 alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
