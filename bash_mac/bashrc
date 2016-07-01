@@ -133,3 +133,4 @@ alias mou='/Applications/Mou.app/Contents/MacOS/Mou'
 if brew command command-not-found-init > /dev/null; then
   eval "$(brew command-not-found-init)"
 fi
+export HOMEBREW_CASK_OPTS="$HOMEBREW_CASK_OPTS --caskroom=/opt/homebrew-cask/Caskroom"
