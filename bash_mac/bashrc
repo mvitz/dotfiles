@@ -90,6 +90,9 @@ export GIT_PS1_SHOWUPSTREAM="verbose"
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
+### autoenv
+source /usr/local/opt/autoenv/activate.sh
+
 ### java
 alias java7="export JAVA_HOME=$(/usr/libexec/java_home -v1.7)"
 alias java8="export JAVA_HOME=$(/usr/libexec/java_home -v1.8)"
