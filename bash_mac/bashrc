@@ -72,6 +72,8 @@ export HISTFORMAT='%F %T '
 mkcd() { [[ -n "$1" ]] && mkdir -p $1 && cd $1; }
 # list current processes for given pattern
 fps() { ps ax | grep -i "${1:-""}" | grep -v grep; }
+# don't forget the : when using scp
+scp(){ [[ "$@" =~ : ]] && command scp "$@" || echo 'You forgot the colon!'; }
 
 ### navigation
 shopt -s autocd
