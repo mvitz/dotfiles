@@ -13,6 +13,10 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+bind 'set completion-ignore-case on'
+bind 'set completion-map-case on'
+bind 'set show-all-if-ambiguous on'
+
 ### aliases
 alias    ..='cd ..'
 alias   ...='cd ../..'
@@ -63,6 +67,11 @@ export PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
 mkcd() { [[ -n "$1" ]] && mkdir -p $1 && cd $1; }
 # list current processes for given pattern
 fps() { ps ax | grep -i "${1:-""}" | grep -v grep; }
+
+### navigation
+shopt -s autocd
+shopt -s dirspell
+shopt -s cdspell
 
 ### git
 export GIT_PS1_SHOWDIRTYSTATE=true
