@@ -148,3 +148,6 @@ alias dps='docker ps'
 alias drm-stopped='docker rm $(docker ps -a -q)'
 alias drmi-dangling='docker rmi $(docker images -qf dangling=true)'
 alias dvrm-dangling='docker volume rm $(docker volume ls -qf dangling=true)'
+
+# misc
+alias busy="cat /dev/urandom | hexdump -C | grep 'ca fe'"
