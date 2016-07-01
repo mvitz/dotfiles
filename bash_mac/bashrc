@@ -151,3 +151,6 @@ alias dvrm-dangling='docker volume rm $(docker volume ls -qf dangling=true)'
 
 # misc
 alias busy="cat /dev/urandom | hexdump -C | grep 'ca fe'"
+
+# AWS
+complete -C aws_completer aws
