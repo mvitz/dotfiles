@@ -38,6 +38,7 @@
   ready = rebase -i @{u}
   unstage = reset HEAD --
   restore = checkout --
+  please = push --force-with-lease
 [push]
   default = simple
 [filter "media"]
