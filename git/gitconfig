@@ -39,6 +39,9 @@
   unstage = reset HEAD --
   restore = checkout --
   please = push --force-with-lease
+  stsh = stash --keep-index
+  staash = stash --include-untracked
+  staaash = stash --all
 [push]
   default = simple
 [filter "media"]
