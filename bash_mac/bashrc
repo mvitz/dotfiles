@@ -118,7 +118,7 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
 ### autoenv
-source /usr/local/opt/autoenv/activate.sh
+#source /usr/local/opt/autoenv/activate.sh
 
 ### java
 alias java6="export JAVA_HOME=$(/usr/libexec/java_home -v1.6)"
