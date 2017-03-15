@@ -184,3 +184,6 @@ complete -C aws_completer aws
 
 # ripgrep - https://github.com/BurntSushi/ripgrep
 alias rg='rg --type-add sass:*.scss'
+
+# added by travis gem
+[ -f /Users/mvitz/.travis/travis.sh ] && source /Users/mvitz/.travis/travis.sh
