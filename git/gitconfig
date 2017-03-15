@@ -42,6 +42,7 @@
   stsh = stash --keep-index
   staash = stash --include-untracked
   staaash = stash --all
+  shorty = status --short --branch
 [push]
   default = simple
 [filter "media"]
