@@ -133,7 +133,8 @@ chmvn() {
 }
 alias mvn325='chmvn 3.2.5'
 alias mvn333='chmvn 3.3.3'
-mvn333
+alias mvn339='chmvn 3.3.9'
+mvn339
 
 export ANT_HOME=/Users/mvitz/Development/apps/apache-ant-1.9.6
 export PATH="$ANT_HOME/bin:$PATH"
