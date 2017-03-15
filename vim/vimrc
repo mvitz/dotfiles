@@ -91,7 +91,7 @@ nnoremap : ;
 nnoremap ! :!
 
 " quit insert mode with jk
-inoremap jk <Esc>
+"inoremap jk <Esc>
 
 " fix some misspellings
 cabbrev ew :wq
