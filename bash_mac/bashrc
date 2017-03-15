@@ -156,9 +156,6 @@ alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 export ACTIVATOR_HOME="~/Development/apps/activator"
 export PATH="$ACTIVATOR_HOME:$PATH"
 
-### Mou
-alias mou='/Applications/Mou.app/Contents/MacOS/Mou'
-
 if brew command command-not-found-init > /dev/null; then
   eval "$(brew command-not-found-init)"
 fi
