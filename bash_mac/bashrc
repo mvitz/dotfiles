@@ -181,3 +181,6 @@ jwtd() { echo -n "$1" | cut -d "." -f 2 | base64 -D | jq .; }
 
 # AWS
 complete -C aws_completer aws
+
+# ripgrep - https://github.com/BurntSushi/ripgrep
+alias rg='rg --type-add sass:*.scss'
