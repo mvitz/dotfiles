@@ -1,7 +1,7 @@
 [user]
   name = Michael Vitz
   email = vitz.michael@googlemail.com
-  signingkey = 89512794
+  signingkey = 0xDF21E518FE76512B
 [core]
   autocrlf = input
   editor = vi
