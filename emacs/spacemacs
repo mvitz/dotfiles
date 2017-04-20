@@ -41,7 +41,7 @@ values."
      ;; better-defaults
      emacs-lisp
      emoji
-     ;; git
+     git
      ;; markdown
      ;; org
      ;; (shell :variables
