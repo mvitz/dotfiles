@@ -137,9 +137,6 @@ mvn352
 export ANT_HOME=/Users/mvitz/Development/apps/apache-ant-1.9.6
 export PATH="$ANT_HOME/bin:$PATH"
 
-export GRAILS_HOME=/Users/mvitz/Development/apps/grails-3.1.1
-export PATH="$GRAILS_HOME/bin:$PATH"
-
 export GRADLE_HOME=/Users/mvitz/Development/apps/gradle-2.11
 export PATH="$GRADLE_HOME/bin:$PATH"
 
