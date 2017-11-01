@@ -144,10 +144,6 @@ alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 ### thefuckt
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 
-### activator
-export ACTIVATOR_HOME="~/Development/apps/activator"
-export PATH="$ACTIVATOR_HOME:$PATH"
-
 if brew command command-not-found-init > /dev/null; then
   eval "$(brew command-not-found-init)"
 fi
