@@ -45,6 +45,7 @@ values."
      git
      helm
      html
+     javascript
      (markdown :variables
                markdown-live-preview-engine 'vmd)
      ;; org
