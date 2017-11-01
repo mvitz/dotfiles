@@ -147,7 +147,6 @@ alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 if brew command command-not-found-init > /dev/null; then
   eval "$(brew command-not-found-init)"
 fi
-export HOMEBREW_CASK_OPTS="$HOMEBREW_CASK_OPTS --caskroom=/opt/homebrew-cask/Caskroom"
 
 # itermocil
 complete -W "$(itermocil --list)" itermocil
