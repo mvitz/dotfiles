@@ -36,14 +36,14 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     helm
-     ;; auto-completion
      ;; better-defaults
+     auto-completion
      (clojure :variables
               clojure-enable-fancify-symbols t)
      emacs-lisp
      emoji
      git
+     helm
      (markdown :variables
                markdown-live-preview-engine 'vmd)
      ;; org
