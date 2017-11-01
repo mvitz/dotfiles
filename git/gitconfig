@@ -6,6 +6,8 @@
   autocrlf = input
   editor = vi
   excludesfile = ~/.gitignore
+  #precomposeunicode = true
+  quotepath = false
 [mergetool]
   tool = vimdiff
   keepBackup = false
