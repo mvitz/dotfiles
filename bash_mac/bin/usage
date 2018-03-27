@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#Print usage of the given scripts. Without arguments, read script from stdin.
+#
+#Usage:
+#  $ usage [<SCRIPT>...]
+#
+# Found at: https://www.innoq.com/de/blog/bash-cheat-sheet/#comment-3826340909
+
+set -euo pipefail
+IFS=$'\n\t'
+
+sed -En '2,/^$/s/^#//p' "$@" >&2
