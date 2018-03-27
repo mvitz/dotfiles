@@ -134,8 +134,16 @@ alias java9="export JAVA_HOME=$(/usr/libexec/java_home -v9)"
 alias java10="export JAVA_HOME=$(/usr/libexec/java_home -v10)"
 java8
 
+M2_HOME_BASE="$HOME/Development/apps/maven"
 chmvn() {
-  export M2_HOME=/Users/mvitz/Development/apps/apache-maven-$1
+  local m2_home_new="$M2_HOME_BASE/$1"
+  if [ ! -d $m2_home_new ]; then
+    echo "Maven $1 is not installed" 1>&2
+    return 1
+  fi
+  [[ ! -z $M2_HOME ]] && path_remove "$M2_HOME/bin"
+
+  export M2_HOME=$m2_home_new
   export PATH="$M2_HOME/bin:$PATH"
 }
 alias mvn352='chmvn 3.5.2'
