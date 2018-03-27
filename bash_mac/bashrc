@@ -86,6 +86,11 @@ shopt -s autocd
 shopt -s dirspell
 shopt -s cdspell
 
+### scripts
+SCRIPTS_HOME="$HOME/bin"
+path_remove "$SCRIPTS_HOME"
+export PATH="$SCRIPTS_HOME:$PATH"
+
 ### git
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWSTASHSTATE=true
