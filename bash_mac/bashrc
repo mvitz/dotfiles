@@ -131,6 +131,7 @@ source /usr/local/share/chruby/auto.sh
 alias java7="export JAVA_HOME=$(/usr/libexec/java_home -v1.7)"
 alias java8="export JAVA_HOME=$(/usr/libexec/java_home -v1.8)"
 alias java9="export JAVA_HOME=$(/usr/libexec/java_home -v9)"
+alias java10="export JAVA_HOME=$(/usr/libexec/java_home -v10)"
 java8
 
 chmvn() {
