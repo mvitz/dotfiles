@@ -6,6 +6,7 @@
   autocrlf = input
   editor = vi
   excludesfile = ~/.gitignore
+  pager = diff-so-fancy | less --tabs=4 -R
   #precomposeunicode = true
   quotepath = false
 [mergetool]
@@ -47,6 +48,7 @@
   shorty = status --short --branch
   branch-name = "!git rev-parse --abbrev-ref HEAD"
   publish = "!git push -u origin $(git branch-name)"
+  patch = !git --no-pager diff --no-color
 [push]
   default = simple
 [filter "media"]
@@ -72,10 +74,5 @@
   gpgsign = true
 [diff]
   compactionHeuristic = true
-[interactive]
-  diffFilter = diff-so-fancy
 [pager]
-  log = diff-so-fancy | less
-  show = diff-so-fancy | less
-  diff = diff-so-fancy | less
-
+  diff = diff-so-fancy | less --tabs=4 -R --pattern '^(Date|added|deleted|modified|renamed): '
