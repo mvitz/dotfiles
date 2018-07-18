@@ -133,10 +133,21 @@ source /usr/local/share/chruby/auto.sh
 
 ### java
 #alias java6="export JAVA_HOME=$(/usr/libexec/java_home -v1.6)"
-alias java7="export JAVA_HOME=$(/usr/libexec/java_home -v1.7)"
-alias java8="export JAVA_HOME=$(/usr/libexec/java_home -v1.8)"
-alias java9="export JAVA_HOME=$(/usr/libexec/java_home -v9)"
-alias java10="export JAVA_HOME=$(/usr/libexec/java_home -v10)"
+alias java7=java7_76
+alias java7_76="export JAVA_HOME=$(/usr/libexec/java_home -v1.7.0_76)"
+alias java8=java8_181
+alias java8_144="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_144)"
+alias java8_152="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_152)"
+alias java8_162="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_162)"
+alias java8_172="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_172)"
+alias java8_181="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_181)"
+alias java9=java9.0.4
+alias java9.0.1="export JAVA_HOME=$(/usr/libexec/java_home -v9.0.1)"
+alias java9.0.4="export JAVA_HOME=$(/usr/libexec/java_home -v9.0.4)"
+alias java10=java10.0.2
+alias java10.0.0="export JAVA_HOME=$(/usr/libexec/java_home -v10.0.0)"
+alias java10.0.1="export JAVA_HOME=$(/usr/libexec/java_home -v10.0.1)"
+alias java10.0.2="export JAVA_HOME=$(/usr/libexec/java_home -v10.0.2)"
 alias java11="export JAVA_HOME=$(/usr/libexec/java_home -v11)"
 java8
 
