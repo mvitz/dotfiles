@@ -4,11 +4,6 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" Workaround for https://github.com/vim/vim/issues/3117
-if has('python3')
-  silent! python3 1
-endif
-
 execute pathogen#infect()
 
 " ================ General Config ====================
