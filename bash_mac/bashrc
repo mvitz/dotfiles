@@ -143,25 +143,6 @@ chmvn() {
 alias mvn352='chmvn 3.5.2'
 mvn352
 
-ANT_HOME_BASE="/Users/mvitz/Development/apps/ant"
-chant() {
-  local ant_home_new="$ANT_HOME_BASE/$1"
-  if [ ! -d $ant_home_new ]; then
-    echo "ANT $1 is not installed" 1>&2
-    return 1
-  fi
-  [[ ! -z $ANT_HOME ]] && path_remove "$ANT_HOME/bin"
-
-  export ANT_HOME=$ant_home_new
-  export PATH="$ANT_HOME/bin:$PATH"
-}
-alias ant1.9.6='chant 1.9.6'
-alias ant1.9.9='chant 1.9.9'
-alias ant1.10.1='chant 1.10.1'
-alias ant1.9='chant 1.9'
-alias ant1.10='chant 1.10'
-ant1.10
-
 ### golang
 export GOPATH=$HOME/Development/golang
 path_remove "$GOPATH/bin"
