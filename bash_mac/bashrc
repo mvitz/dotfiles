@@ -108,12 +108,13 @@ source /usr/local/share/chruby/auto.sh
 #alias java6="export JAVA_HOME=$(/usr/libexec/java_home -v1.6)"
 alias java7=java7_76
 alias java7_76="export JAVA_HOME=$(/usr/libexec/java_home -v1.7.0_76)"
-alias java8=java8_181
+alias java8=java8_192
 alias java8_144="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_144)"
 alias java8_152="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_152)"
 alias java8_162="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_162)"
 alias java8_172="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_172)"
 alias java8_181="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_181)"
+alias java8_192="export JAVA_HOME=$(/usr/libexec/java_home -v1.8.0_192)"
 alias java9=java9.0.4
 alias java9.0.1="export JAVA_HOME=$(/usr/libexec/java_home -v9.0.1)"
 alias java9.0.4="export JAVA_HOME=$(/usr/libexec/java_home -v9.0.4)"
