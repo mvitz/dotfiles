@@ -140,8 +140,10 @@ chmvn() {
   export M2_HOME=$m2_home_new
   export PATH="$M2_HOME/bin:$PATH"
 }
-alias mvn352='chmvn 3.5.2'
-mvn352
+alias mvn35='chmvn 3.5'
+alias mvn36='chmvn 3.6'
+alias mvn360='chmvn 3.6.0'
+chmvn latest
 
 ### postgres
 alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
