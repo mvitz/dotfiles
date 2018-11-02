@@ -97,33 +97,6 @@ export GIT_PS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 export GIT_PS1_SHOWUPSTREAM="verbose"
 
-alias g='git'
-alias ga='git add'
-alias gap='git add -p'
-alias gf='git fetch --all'
-alias gst='git st'
-alias gs='git st'
-alias gl='git pull'
-alias gp='git push'
-alias gpo='git push origin'
-alias gpu='git push --set-upstream'
-alias gpom='git push origin master'
-alias gc='git ci'
-alias gb='git br'
-alias gba='git br -a'
-alias gco='git checkout'
-alias gcb='git checkout -b'
-alias gdel='git br -d'
-alias gll='git log-nice'
-alias gg='git log-fancy'
-alias ggs='gg --stat'
-alias gt='git tag'
-alias gta='git tag -a'
-alias gtd='git tag -d'
-alias gtl='git tag -l'
-alias gd='git di'
-alias gds='git ds'
-
 ### ruby
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
