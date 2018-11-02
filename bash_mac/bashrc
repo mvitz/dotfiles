@@ -154,9 +154,6 @@ if brew command command-not-found-init > /dev/null; then
   eval "$(brew command-not-found-init)"
 fi
 
-# itermocil
-complete -W "$(itermocil --list)" itermocil
-
 # docker
 alias dm-start='docker-machine start default && sleep 5 && eval $(docker-machine env default)'
 alias dm-stop='docker-machine stop default && unset DOCKER_TLS_VERIFY DOCKER_HOST DOCKER_CERT_PATH DOCKER_MACHINE_NAME'
