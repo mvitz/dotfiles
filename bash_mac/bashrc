@@ -154,17 +154,6 @@ if brew command command-not-found-init > /dev/null; then
   eval "$(brew command-not-found-init)"
 fi
 
-# docker
-alias dm-start='docker-machine start default && sleep 5 && eval $(docker-machine env default)'
-alias dm-stop='docker-machine stop default && unset DOCKER_TLS_VERIFY DOCKER_HOST DOCKER_CERT_PATH DOCKER_MACHINE_NAME'
-alias dm-status='docker-machine status default'
-alias dm-restart='docker-machine-default-stop && docker-machine-default-start'
-
-alias dps='docker ps'
-alias drm-stopped='docker rm $(docker ps -a -q)'
-alias drmi-dangling='docker rmi $(docker images -qf dangling=true)'
-alias dvrm-dangling='docker volume rm $(docker volume ls -qf dangling=true)'
-
 # misc
 alias busy="cat /dev/urandom | hexdump -C | grep 'ca fe'"
 jwtd() { echo -n "$1" | cut -d "." -f 2 | base64 -D | jq .; }
