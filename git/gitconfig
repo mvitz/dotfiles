@@ -31,10 +31,10 @@
   brs = for-each-ref --sort='-authordate:iso8601' --format=' %(color:green)%(authordate:iso8601)%09%(color:white)%(refname:short)' refs/heads
   cob = checkout -b
   rb = rebase
-  log-me = "!git log --author `git config user.email` --pretty=format:'%Cred%h%Creset %s %Cgreen(%cr)%Creset'"
+  log-me = "!git log --author `git config user.email` --date=human --pretty=format:'%Cred%h%Creset %s %Cgreen(%ad)%Creset'"
   log-nice = log --graph --decorate --pretty=oneline --abbrev-commit --all
-  log-fancy = log --graph --pretty=format:'%Cred%h %C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset' --all
-  standup = "!git log --author `git config user.email` --since yesterday --pretty=short"
+  log-fancy = log --graph --date=human --pretty=format:'%Cred%h %C(yellow)%d%Creset %s %Cgreen(%ad) %C(cyan)<%an>%Creset' --all
+  standup = "!git log --author `git config user.email` --since yesterday --pretty=short --all"
   ignored = ls-files --others -i --exclude-standard
   wipe = reset --hard HEAD
   praise = blame
