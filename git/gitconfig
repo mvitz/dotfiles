@@ -71,8 +71,9 @@
 [fetch]
   prune = true
 [commit]
-  template = ~/.gitcommit
   gpgsign = true
+  template = ~/.gitcommit
+  verbose = true
 [diff]
   compactionHeuristic = true
 [pager]
