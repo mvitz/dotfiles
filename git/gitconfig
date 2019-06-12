@@ -67,7 +67,7 @@
 [merge]
   ff = false
 [pull]
-  rebase = preserve
+  rebase = merges
 [fetch]
   prune = true
 [commit]
