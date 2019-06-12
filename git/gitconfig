@@ -80,3 +80,5 @@
   diff = diff-so-fancy | less --tabs=4 -R --pattern '^(Date|added|deleted|modified|renamed): '
 [rebase]
   autostash = true
+[rerere]
+  enabled = true
