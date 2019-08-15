@@ -127,9 +127,10 @@ alias java11=java11.0.2
 alias java11.0.0="export JAVA_HOME=$(/usr/libexec/java_home -v11.0.0)"
 alias java11.0.1="export JAVA_HOME=$(/usr/libexec/java_home -v11.0.1)"
 alias java11.0.2="export JAVA_HOME=$(/usr/libexec/java_home -v11.0.2)"
-alias java12=java12.0.1
+alias java12=java12.0.2
 alias java12.0.0="export JAVA_HOME=$(/usr/libexec/java_home -v12.0.0)"
 alias java12.0.1="export JAVA_HOME=$(/usr/libexec/java_home -v12.0.1)"
+alias java12.0.1="export JAVA_HOME=$(/usr/libexec/java_home -v12.0.2)"
 java8
 
 M2_HOME_BASE="$HOME/Development/apps/maven"
