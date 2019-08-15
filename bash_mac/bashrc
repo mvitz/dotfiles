@@ -148,6 +148,7 @@ chmvn() {
 alias mvn35='chmvn 3.5'
 alias mvn36='chmvn 3.6'
 alias mvn360='chmvn 3.6.0'
+alias mvn361='chmvn 3.6.1'
 chmvn latest
 
 ### sbt
