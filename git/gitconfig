@@ -41,7 +41,6 @@
   praise = blame
   ready = rebase -i @{u}
   unstage = reset HEAD --
-  restore = checkout --
   please = push --force-with-lease
   stsh = stash --keep-index
   staash = stash --include-untracked
