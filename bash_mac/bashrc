@@ -130,7 +130,7 @@ alias java11.0.2="export JAVA_HOME=$(/usr/libexec/java_home -v11.0.2)"
 alias java12=java12.0.2
 alias java12.0.0="export JAVA_HOME=$(/usr/libexec/java_home -v12.0.0)"
 alias java12.0.1="export JAVA_HOME=$(/usr/libexec/java_home -v12.0.1)"
-alias java12.0.1="export JAVA_HOME=$(/usr/libexec/java_home -v12.0.2)"
+alias java12.0.2="export JAVA_HOME=$(/usr/libexec/java_home -v12.0.2)"
 alias java13="export JAVA_HOME=$(/usr/libexec/java_home -v13)"
 java8
 
