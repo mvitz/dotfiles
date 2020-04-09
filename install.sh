@@ -17,3 +17,6 @@ ln -s "${DOTFILES_REPO_DIR}" "${DOTFILES_DIR}"
 
 # git
 ln_dotfile gitconfig
+
+# bash
+ln_dotfile bashrc
