@@ -99,3 +99,10 @@ nnoremap ! :!
 " fix some misspellings
 cabbrev ew :wq
 cabbrev qw :wq
+
+" Use solarized color scheme
+set t_Co=256
+"set background=light
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized

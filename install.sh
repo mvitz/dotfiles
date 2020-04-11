@@ -27,3 +27,6 @@ ln_dotfile vimrc
 mkdir -p "${HOME}/.vim"
 [[ -L "${HOME}/.vim/autoload" ]] && unlink "${HOME}/.vim/autoload"
 ln -s "${DOTFILES_DIR}/vim/pathogen/autoload" "${HOME}/.vim/autoload"
+[[ -L "${HOME}/.vim/bundle" ]] && unlink "${HOME}/.vim/bundle"
+ln -s "${DOTFILES_DIR}/vim/bundle" "${HOME}/.vim/bundle"
+
