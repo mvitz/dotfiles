@@ -28,3 +28,6 @@
 [submodule "vim/bundle/editorconfig-vim"]
 	path = vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/bundle/vim-visual-star-search"]
+	path = vim/bundle/vim-visual-star-search
+	url = https://github.com/bronson/vim-visual-star-search.git
