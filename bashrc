@@ -79,3 +79,6 @@ export GIT_PS1_SHOWUPSTREAM="verbose"
 
 alias cdr='cd $(git rev-parse --show-toplevel)'
 
+### SDKMAN!
+export SDKMAN_DIR="${HOME}/.sdkman"
+[[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
