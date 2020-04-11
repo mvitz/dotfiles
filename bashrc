@@ -82,3 +82,8 @@ alias cdr='cd $(git rev-parse --show-toplevel)'
 ### SDKMAN!
 export SDKMAN_DIR="${HOME}/.sdkman"
 [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+
+### NVM
+export NVM_DIR="${HOME}/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
