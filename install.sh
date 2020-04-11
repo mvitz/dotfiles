@@ -19,6 +19,7 @@ ln -s "${DOTFILES_REPO_DIR}" "${DOTFILES_DIR}"
 ln_dotfile gitconfig
 
 # bash
+ln_dotfile bash_profile
 ln_dotfile bashrc
 
 # vim
