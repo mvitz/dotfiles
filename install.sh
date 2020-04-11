@@ -35,3 +35,6 @@ ln_dotfile npmrc
 
 # netrc
 ln_dotfile netrc
+
+# direnv
+ln_dotfile direnvrc
