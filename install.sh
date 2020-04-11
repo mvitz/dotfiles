@@ -20,3 +20,10 @@ ln_dotfile gitconfig
 
 # bash
 ln_dotfile bashrc
+
+# vim
+ln_dotfile vimrc
+
+mkdir -p "${HOME}/.vim"
+[[ -L "${HOME}/.vim/autoload" ]] && unlink "${HOME}/.vim/autoload"
+ln -s "${DOTFILES_DIR}/vim/pathogen/autoload" "${HOME}/.vim/autoload"
