@@ -32,3 +32,6 @@ ln -s "${DOTFILES_DIR}/vim/bundle" "${HOME}/.vim/bundle"
 
 # npm
 ln_dotfile npmrc
+
+# netrc
+ln_dotfile netrc
