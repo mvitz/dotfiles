@@ -19,3 +19,6 @@
 [submodule "vim/bundle/argtextobj.vim"]
 	path = vim/bundle/argtextobj.vim
 	url = git://github.com/vim-scripts/argtextobj.vim.git
+[submodule "vim/bundle/vim-exchange"]
+	path = vim/bundle/vim-exchange
+	url = git://github.com/tommcdo/vim-exchange.git
