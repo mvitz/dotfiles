@@ -39,3 +39,6 @@ ln_dotfile netrc
 
 # direnv
 ln_dotfile direnvrc
+
+# ssh
+ln_dotfile ssh
