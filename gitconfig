@@ -60,3 +60,5 @@
   process = git-lfs filter-process
   required = true
   smudge = git-lfs smudge -- %f
+[includeIf "gitdir:~/Development/innoq/"]
+  path = ~/.dotfiles/gitconfig_innoq
