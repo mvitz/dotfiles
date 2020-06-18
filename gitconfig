@@ -62,3 +62,5 @@
   smudge = git-lfs smudge -- %f
 [includeIf "gitdir:~/Development/innoq/"]
   path = ~/.dotfiles/gitconfig_innoq
+[includeIf "gitdir:~/Projects/"]
+  path = ~/.dotfiles/gitconfig_innoq
