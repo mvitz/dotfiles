@@ -27,7 +27,7 @@
   di = diff
   ds = diff --staged
   fix = commit --amend -C HEAD
-  history = log --follow --patch --patch
+  history = log --follow --patch
   log-fancy = log --graph --date=human --pretty=format:'%Cred%h %C(yellow)%d%Creset %s %Cgreen(%ad) %C(cyan)<%an>%Creset' --all
   please = push --force-with-lease
   praise = blame
