@@ -64,3 +64,5 @@
   path = ~/.dotfiles/gitconfig_innoq
 [includeIf "gitdir:~/Projects/"]
   path = ~/.dotfiles/gitconfig_innoq
+[init]
+  defaultBranch = main
