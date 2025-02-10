@@ -1,4 +1,4 @@
 use_sdk() {
   [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
-  SDKMAN_FFLINE_MODE=true sdk use "$1" "$2"
+  SDKMAN_OFFLINE_MODE=true sdk use "$1" "$2"
 }
