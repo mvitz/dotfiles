@@ -26,6 +26,9 @@ alias  grep='grep --color=auto'
 alias fgrep='grep --color=auto'
 alias egrep='grep --color=auto'
 
+alias find='gfind'
+alias  sed='gsed'
+
 alias refresh='source ~/.bashrc'
 
 ### theme
