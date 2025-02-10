@@ -2,3 +2,8 @@ use_sdk() {
   [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
   SDKMAN_OFFLINE_MODE=true sdk use "$1" "$2"
 }
+
+use_nvm() {
+  [ -s "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh" ] && source "${HOMEBREW_PREFIX}/opt/nvm/nvm.sh"
+  nvm use "$@"
+}
