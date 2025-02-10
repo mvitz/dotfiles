@@ -36,3 +36,6 @@ ln_dotfile direnv/direnvrc
 
 # ssh
 ln_dotfile ssh
+
+# maven
+ln_dotfile m2
