@@ -6,9 +6,10 @@ DOTFILES_REPO_DIR=$(cd "$(dirname "$0")"; pwd -P)
 DOTFILES_DIR="${HOME}/.dotfiles"
 
 ln_dotfile() {
-  local dotfile="${1}"
+  local dotfile
+  dotfile=$(basename "${1}")
   [[ -L "${HOME}/.${dotfile}" ]] && unlink "${HOME}/.${dotfile}"
-  ln -s "${DOTFILES_DIR}/${dotfile}" "${HOME}/.${dotfile}"
+  ln -s "${DOTFILES_DIR}/${1}" "${HOME}/.${dotfile}"
 }
 
 # create symlink for dotfiles
@@ -16,7 +17,7 @@ ln_dotfile() {
 ln -s "${DOTFILES_REPO_DIR}" "${DOTFILES_DIR}"
 
 # git
-ln_dotfile gitconfig
+ln_dotfile git/gitconfig
 
 # bash
 ln_dotfile bash_profile
