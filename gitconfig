@@ -67,3 +67,5 @@
   path = ~/.dotfiles/gitconfig_innoq
 [init]
   defaultBranch = main
+[advice]
+  skippedCherryPicks = false
