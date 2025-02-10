@@ -20,8 +20,8 @@ ln -s "${DOTFILES_REPO_DIR}" "${DOTFILES_DIR}"
 ln_dotfile git/gitconfig
 
 # bash
-ln_dotfile bash_profile
-ln_dotfile bashrc
+ln_dotfile bash/bash_profile
+ln_dotfile bash/bashrc
 
 # npm
 ln_dotfile npm/npmrc
