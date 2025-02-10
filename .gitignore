@@ -1,4 +1,5 @@
 m2/*
 !m2/.gitkeep
 netrc
-ssh/
+ssh/*
+!ssh/.gitkeep
