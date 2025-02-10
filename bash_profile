@@ -20,8 +20,11 @@ eval "$(/usr/local/Homebrew/bin/brew shellenv)"
 # Add Homebrew installed curl to start of PATH
 export PATH="${HOMEBREW_PREFIX}/opt/curl/bin:${PATH+:$PATH}"
 
+# Enable Homebrew installed bash completion
+if [ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]; then
+  source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
+fi
+
 if [ -n "$BASH" ] && [ -r "$HOME/.bashrc" ]; then
   source "$HOME/.bashrc"
 fi
-
-source "$(brew --prefix)/etc/profile.d/bash_completion.sh"
