@@ -95,5 +95,5 @@ export NVM_DIR="${HOME}/.nvm"
 eval "$(direnv hook bash)"
 
 ### ruby
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+source "${HOMEBREW_PREFIX}/share/chruby/chruby.sh"
+source "${HOMEBREW_PREFIX}/share/chruby/auto.sh"
