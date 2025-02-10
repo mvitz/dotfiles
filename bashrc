@@ -126,3 +126,6 @@ eval "$(direnv hook bash)"
 ### ruby
 source "${HOMEBREW_PREFIX}/share/chruby/chruby.sh"
 source "${HOMEBREW_PREFIX}/share/chruby/auto.sh"
+
+### fzf
+eval "$(fzf --bash)"
