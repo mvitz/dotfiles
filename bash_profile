@@ -6,6 +6,10 @@ export LC_TIME='de_DE.UTF-8'
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+# Force Homebrew to use curl and git installed via Homebrew
+export HOMEBREW_FORCE_BREWED_CURL=1
+export HOMEBREW_FORCE_BREWED_GIT=1
+
 if [ -n "$BASH" ] && [ -r "$HOME/.bashrc" ]; then
   source "$HOME/.bashrc"
 fi
