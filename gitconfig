@@ -69,3 +69,5 @@
   defaultBranch = main
 [advice]
   skippedCherryPicks = false
+[help]
+  autoCorrect = prompt
