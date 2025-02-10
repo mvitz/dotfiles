@@ -17,7 +17,7 @@ export HOMEBREW_FORCE_BREWED_CURL=1
 export HOMEBREW_FORCE_BREWED_GIT=1
 
 # Enable Homebrew
-eval "$(/usr/local/Homebrew/bin/brew shellenv)"
+eval "$(/opt/Homebrew/bin/brew shellenv)"
 
 # Add Homebrew installed curl to start of PATH
 export PATH="${HOMEBREW_PREFIX}/opt/curl/bin:${PATH+:$PATH}"
