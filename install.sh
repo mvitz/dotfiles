@@ -24,7 +24,7 @@ ln_dotfile bash_profile
 ln_dotfile bashrc
 
 # npm
-ln_dotfile npmrc
+ln_dotfile npm/npmrc
 
 # netrc
 ln_dotfile netrc
