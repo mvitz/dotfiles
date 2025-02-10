@@ -4,6 +4,7 @@ export LC_MONETARY='de_DE.UTF-8'
 export LC_NUMERIC='de_DE.UTF-8'
 export LC_TIME='de_DE.UTF-8'
 
+# Prevent macOS from displaying a warning that zsh is now the default shell
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
 # Force Homebrew to use curl and git installed via Homebrew
