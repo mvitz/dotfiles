@@ -30,7 +30,7 @@ ln_dotfile npmrc
 ln_dotfile netrc
 
 # direnv
-ln_dotfile direnvrc
+ln_dotfile direnv/direnvrc
 
 # ssh
 ln_dotfile ssh
