@@ -20,7 +20,7 @@ export HOMEBREW_FORCE_BREWED_GIT=1
 eval "$(/opt/Homebrew/bin/brew shellenv)"
 
 # Add Homebrew installed curl to start of PATH
-export PATH="${HOMEBREW_PREFIX}/opt/curl/bin:${PATH+:$PATH}"
+export PATH="${HOMEBREW_PREFIX}/opt/curl/bin${PATH+:$PATH}"
 
 # Enable Homebrew installed bash completion
 if [ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]; then
