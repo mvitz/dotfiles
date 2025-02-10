@@ -5,7 +5,7 @@
 [core]
   autocrlf = input
   editor = vi
-  pager = diff-so-fancy | less --tabs=4 -R
+  pager = delta
   quotepath = false
 [mergetool]
   tool = vimdiff
@@ -49,8 +49,6 @@
 [diff]
   compactionHeuristic = true
   noprefix = true
-[pager]
-  diff = diff-so-fancy | less --tabs=4 -R --pattern '^(Date|added|deleted|modified|renamed): '
 [rebase]
   autostash = true
   updateRefs = true
@@ -71,3 +69,6 @@
   skippedCherryPicks = false
 [help]
   autoCorrect = prompt
+[delta]
+  line-numbers = true
+  navigate = true
