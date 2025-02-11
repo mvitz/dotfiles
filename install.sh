@@ -12,6 +12,14 @@ ln_dotfile() {
   ln -s "${DOTFILES_DIR}/${1}" "${HOME}/.${dotfile}"
 }
 
+ln_dotconfig() {
+  [[ ! -d "${HOME}/.config" ]] && mkdir "${HOME}/.config"
+
+  local config="${1}"
+  [[ -L "${HOME}/.config/${config}" ]] && unlink "${HOME}/.config/${config}"
+  ln -s "${DOTFILES_DIR}/${1}" "${HOME}/.config/${config}"
+}
+
 # create symlink for dotfiles
 [[ -L "${DOTFILES_DIR}" ]] && unlink "${DOTFILES_DIR}"
 ln -s "${DOTFILES_REPO_DIR}" "${DOTFILES_DIR}"
@@ -32,7 +40,7 @@ ln_dotfile npm/npmrc
 ln_dotfile netrc
 
 # direnv
-ln_dotfile direnv/direnvrc
+ln_dotconfig direnv
 
 # ssh
 ln_dotfile ssh
