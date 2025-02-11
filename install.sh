@@ -47,3 +47,6 @@ ln_dotfile ssh
 
 # maven
 ln_dotfile m2
+
+# testcontainers
+ln_dotfile testcontainers.properties
