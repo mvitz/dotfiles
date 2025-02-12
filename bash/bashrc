@@ -28,8 +28,8 @@ if [ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]; then
 fi
 
 ### system defaults
-export EDITOR='vi'
-export VISUAL='vi'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 export PAGER='less'
 export LESS='-isMR --shift 5'
@@ -129,3 +129,8 @@ source "${HOMEBREW_PREFIX}/share/chruby/auto.sh"
 
 ### fzf
 eval "$(fzf --bash)"
+
+### Neovim
+alias vi='nvim'
+alias vim='nvim'
+alias vimdiff='nvim -d'

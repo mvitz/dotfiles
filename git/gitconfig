@@ -4,11 +4,11 @@
   signingkey = 0xDF21E518FE76512B
 [core]
   autocrlf = input
-  editor = vi
+  editor = nvim
   pager = delta
   quotepath = false
 [mergetool]
-  tool = vimdiff
+  tool = nvimdiff
   keepBackup = false
 [color]
   branch = auto
