@@ -1,12 +1,11 @@
 require('config.lazy')
 
 -- GENERAL
-vim.opt.number = true   -- show line numbers
-vim.opt.showmode = true -- show current mode at the bottom
-vim.opt.list = true     -- show hidden characters
+vim.opt.number = true -- show line numbers
+vim.opt.list = true   -- show hidden characters
 vim.opt.listchars = {
-    tab = '»·',         -- show »· for tab
-    trail = '·',        -- show · for trailing spaces
+    tab = '»·',       -- show »· for tab
+    trail = '·',      -- show · for trailing spaces
 }
 
 -- SEARCH
