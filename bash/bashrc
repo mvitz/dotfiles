@@ -137,3 +137,6 @@ alias vimdiff='nvim -d'
 
 ### Scripts
 export PATH="${HOME}/.bin${PATH+:$PATH}"
+
+### bat
+alias cat='bat'

@@ -56,3 +56,6 @@ ln_dotconfig nvim
 
 # scripts
 ln_dotfile bin
+
+# bat
+ln_dotconfig bat
