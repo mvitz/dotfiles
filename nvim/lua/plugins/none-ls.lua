@@ -8,6 +8,7 @@ return {
             local null_ls = require("null-ls")
             null_ls.setup({
                 sources = {
+                    null_ls.builtins.formatting.shfmt,
                     null_ls.builtins.formatting.stylua,
                     require("none-ls-shellcheck.diagnostics"),
                 },
@@ -27,6 +28,7 @@ return {
             require("mason-null-ls").setup({
                 ensure_installed = {
                     "shellcheck",
+                    "shfmt",
                     "stylua",
                 },
             })
