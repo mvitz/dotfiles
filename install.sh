@@ -53,3 +53,6 @@ ln_dotfile testcontainers.properties
 
 # neovim
 ln_dotconfig nvim
+
+# scripts
+ln_dotfile bin

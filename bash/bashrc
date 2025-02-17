@@ -134,3 +134,6 @@ eval "$(fzf --bash)"
 alias vi='nvim'
 alias vim='nvim'
 alias vimdiff='nvim -d'
+
+### Scripts
+export PATH="${HOME}/.bin${PATH+:$PATH}"

@@ -1,3 +1,4 @@
+bin/idea
 m2/*
 !m2/.gitkeep
 netrc
