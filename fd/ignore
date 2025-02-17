@@ -1,0 +1,2 @@
+# hide .git folder even when --hidden is used
+.git/

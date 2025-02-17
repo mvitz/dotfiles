@@ -59,3 +59,6 @@ ln_dotfile bin
 
 # bat
 ln_dotconfig bat
+
+# fd
+ln_dotconfig fd
