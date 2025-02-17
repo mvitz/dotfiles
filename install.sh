@@ -2,22 +2,25 @@
 set -euo pipefail
 IFS=$'\n\t'
 
-DOTFILES_REPO_DIR=$(cd "$(dirname "$0")"; pwd -P)
+DOTFILES_REPO_DIR=$(
+    cd "$(dirname "$0")"
+    pwd -P
+)
 DOTFILES_DIR="${HOME}/.dotfiles"
 
 ln_dotfile() {
-  local dotfile
-  dotfile=$(basename "${1}")
-  [[ -L "${HOME}/.${dotfile}" ]] && unlink "${HOME}/.${dotfile}"
-  ln -s "${DOTFILES_DIR}/${1}" "${HOME}/.${dotfile}"
+    local dotfile
+    dotfile=$(basename "${1}")
+    [[ -L "${HOME}/.${dotfile}" ]] && unlink "${HOME}/.${dotfile}"
+    ln -s "${DOTFILES_DIR}/${1}" "${HOME}/.${dotfile}"
 }
 
 ln_dotconfig() {
-  [[ ! -d "${HOME}/.config" ]] && mkdir "${HOME}/.config"
+    [[ ! -d "${HOME}/.config" ]] && mkdir "${HOME}/.config"
 
-  local config="${1}"
-  [[ -L "${HOME}/.config/${config}" ]] && unlink "${HOME}/.config/${config}"
-  ln -s "${DOTFILES_DIR}/${1}" "${HOME}/.config/${config}"
+    local config="${1}"
+    [[ -L "${HOME}/.config/${config}" ]] && unlink "${HOME}/.config/${config}"
+    ln -s "${DOTFILES_DIR}/${1}" "${HOME}/.config/${config}"
 }
 
 # create symlink for dotfiles
