@@ -14,7 +14,6 @@ vim.opt.ignorecase = true -- ignore case when searching
 vim.opt.smartcase = true  -- don't ignore case when pattern contains an upper-case character
 
 -- INDENTATION
-vim.opt.autoindent = true  -- indent line on enter based on previous one
 vim.opt.smartindent = true -- use C syntax like rules for indentation
 vim.opt.expandtab = true   -- use spaces instead of tab
 vim.opt.tabstop = 2        -- display tab as two spaces
