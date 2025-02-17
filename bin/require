@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#Checks that each given command is available and executable.
+#
+#Usage:
+#  $ require <COMMAND>...
+#
+
+set -euo pipefail
+IFS=$'\n\t'
+
+if [ $# -eq 0 ]; then
+    usage "$0"; exit 64
+fi
+
+for cmd; do
+    if ! which -s "$cmd" >/dev/null; then
+        echo "${cmd}: command not found" >&2; exit 69
+    fi
+done
