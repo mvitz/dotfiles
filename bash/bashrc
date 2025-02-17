@@ -140,3 +140,6 @@ export PATH="${HOME}/.bin${PATH+:$PATH}"
 
 ### bat
 alias cat='bat'
+
+### zoxide
+eval "$(zoxide init bash --cmd cd)"
