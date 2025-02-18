@@ -27,6 +27,7 @@
   di = diff
   ds = diff --staged
   fix = commit --amend -C HEAD
+  fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
   history = log --follow --patch
   log-fancy = log --graph --date=human --pretty=format:'%Cred%h %C(yellow)%d%Creset %s %Cgreen(%cd) %C(cyan)<%an>%Creset' --all
   please = push --force-with-lease
@@ -50,6 +51,7 @@
   compactionHeuristic = true
   noprefix = true
 [rebase]
+  autosquash = true
   autostash = true
   updateRefs = true
 [rerere]
