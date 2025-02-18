@@ -9,6 +9,7 @@ return {
             null_ls.setup({
                 sources = {
                     null_ls.builtins.diagnostics.markdownlint_cli2,
+                    null_ls.builtins.formatting.prettier,
                     null_ls.builtins.formatting.shfmt,
                     null_ls.builtins.formatting.stylua,
                     require("none-ls-shellcheck.diagnostics"),
@@ -29,6 +30,7 @@ return {
             require("mason-null-ls").setup({
                 ensure_installed = {
                     "markdownlint-cli2",
+                    "prettier",
                     "shellcheck",
                     "shfmt",
                     "stylua",
