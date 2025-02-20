@@ -130,6 +130,20 @@ source "${HOMEBREW_PREFIX}/share/chruby/auto.sh"
 ### fzf
 eval "$(fzf --bash)"
 
+_fzf_setup_completion dir tree
+
+export FZF_DEFAULT_COMMAND="fd --hidden --follow"
+export FZF_CTRL_T_COMMAND="${FZF_DEFAULT_COMMAND}"
+export FZF_ALT_C_COMMAND="${FZF_DEFAULT_COMMAND} --type directory"
+
+_fzf_compgen_path() {
+  fd --hidden --follow "$1"
+}
+
+_fzf_compgen_dir() {
+  fd --hidden --follow --type directory "$1"
+}
+
 ### Neovim
 alias vi='nvim'
 alias vim='nvim'
