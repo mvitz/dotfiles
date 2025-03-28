@@ -46,6 +46,7 @@ vim.keymap.set("ca", "qw", ":wq") -- map qw to :wq in command mode
 
 -- COLORS
 --vim.opt.background = 'light'
+vim.opt.colorcolumn = '+1' -- show colored margin at textwidth
 
 require("lazy").setup({
     spec = {
