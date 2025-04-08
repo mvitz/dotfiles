@@ -23,6 +23,9 @@ vim.opt.shiftwidth = 2 -- use two spaces for indent
 vim.opt.scrolloff = 8 -- start scrolling up/down when we're 8 lines away from margins
 vim.opt.sidescrolloff = 11 -- start scrolling right/left when we're 11 columns away from margins
 
+-- MOUSE
+vim.opt.mouse = "" -- disable mouse support
+
 -- KEYS
 -- disable arrow keys
 vim.keymap.set("", "<Up>", "<NOP>") -- disable Up
