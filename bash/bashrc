@@ -62,6 +62,7 @@ alias refresh='source ~/.bashrc'
 
 ### theme
 export PROMPT_COMMAND=__prompt_command
+export PROMPT_DIRTRIM=1
 
 function __prompt_command() {
   local EXIT="$?"
