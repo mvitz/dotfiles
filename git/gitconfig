@@ -55,6 +55,7 @@
   autostash = true
   updateRefs = true
 [rerere]
+  autoupdate = true
   enabled = true
 [filter "lfs"]
   clean = git-lfs clean -- %f
