@@ -12,8 +12,7 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
-            local lspconfig = require("lspconfig")
-            lspconfig.omnisharp.setup({
+            vim.lsp.config("omnisharp", {
                 cmd = {
                     "/Users/mvitz/.local/share/nvim/mason/packages/omnisharp/omnisharp",
                 },
