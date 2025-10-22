@@ -1,5 +1,7 @@
+bin/datagrip
 bin/idea
 bin/rider
+bin/webstorm
 m2/*
 !m2/.gitkeep
 netrc
