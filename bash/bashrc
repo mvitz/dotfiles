@@ -167,3 +167,6 @@ export KUBE_PS1_SUFFIX=') '
 ### dotnet
 # disable sending telemetry data to MS
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+### heroku
+eval "$(heroku autocomplete:script bash)"
