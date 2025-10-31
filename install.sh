@@ -65,3 +65,6 @@ ln_dotconfig bat
 
 # fd
 ln_dotconfig fd
+
+# lazygit
+ln_dotfile lazygit.yml
