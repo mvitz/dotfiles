@@ -68,8 +68,8 @@ vim.keymap.set(
 )
 
 -- COLORS
---vim.opt.background = 'light'
-vim.opt.colorcolumn = '+1' -- show colored margin at textwidth
+--vim.opt.background = "light"
+vim.opt.colorcolumn = "+1" -- show colored margin at textwidth
 
 require("lazy").setup({
     spec = {
