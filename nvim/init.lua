@@ -47,6 +47,26 @@ vim.keymap.set("n", "!", ":!") -- map ! to :! in normal mode
 vim.keymap.set("ca", "ew", ":wq") -- map ew to :wq in command mode
 vim.keymap.set("ca", "qw", ":wq") -- map qw to :wq in command mode
 
+-- simplify system clipboard usage
+vim.keymap.set(
+    { "n", "x" },
+    "<leader>y",
+    '"+y',
+    { desc = "Copy to system clipboard" }
+)
+vim.keymap.set(
+    { "n", "x" },
+    "<leader>p",
+    '"+p',
+    { desc = "Paste from system clipboard after the cursor position" }
+)
+vim.keymap.set(
+    { "n", "x" },
+    "<leader>P",
+    '"+P',
+    { desc = "Paste from system clipboard before the cursor position" }
+)
+
 -- COLORS
 --vim.opt.background = 'light'
 vim.opt.colorcolumn = '+1' -- show colored margin at textwidth
