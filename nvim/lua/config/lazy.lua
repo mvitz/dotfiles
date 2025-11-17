@@ -27,3 +27,5 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+-- enable Nerd font support
+vim.g.have_nerd_font = true
