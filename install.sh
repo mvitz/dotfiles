@@ -76,3 +76,6 @@ ln_dotfile nvm
 
 # ghostty
 ln_dotconfig ghostty
+
+# tmux
+ln_dotfile tmux.conf
