@@ -73,3 +73,6 @@ ln_dotfile lazygit.yml
 
 # nvm
 ln_dotfile nvm
+
+# ghostty
+ln_dotconfig ghostty

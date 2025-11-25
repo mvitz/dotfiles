@@ -1,0 +1,13 @@
+command = /opt/homebrew/bin/bash --login
+
+maximize = true
+title = " "
+
+confirm-close-surface = false
+quit-after-last-window-closed = true
+
+theme = "Catppuccin Macchiato"
+font-family = "FiraCode Nerd Font Mono"
+font-size = 16
+
+env = NVIM_APPNAME=nvim-overhaul
