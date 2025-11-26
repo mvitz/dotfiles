@@ -5,6 +5,9 @@ maximize = true
 confirm-close-surface = false
 quit-after-last-window-closed = true
 
+macos-icon = holographic
+macos-option-as-alt = left
+
 theme = "Catppuccin Macchiato"
 font-family = "FiraCode Nerd Font Mono"
 font-size = 16
