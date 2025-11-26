@@ -68,37 +68,13 @@ alias  sed='gsed'
 
 alias refresh='source ~/.bashrc'
 
-### theme
-export PROMPT_COMMAND=__prompt_command
-export PROMPT_DIRTRIM=1
-
-function __prompt_command() {
-  local EXIT="$?"
-
-  local   PURPLE="\[\033[0;35m\]"
-  local    GREEN="\[\033[0;32m\]"
-  local      RED="\[\033[0;31m\]"
-  local NO_COLOR="\[\033[0m\]"
-
-  PS1=""
-  PS1+="$GREEN\w"
-  PS1+="$PURPLE$(__git_ps1) "
-  PS1+="$NO_COLOR$(kube_ps1)"
-  if [ $EXIT != 0 ]; then
-    PS1+="$RED"
-  else
-    PS1+="$NO_COLOR"
-  fi
-  PS1+="\$ $NO_COLOR"
-}
-
 ### history
 shopt -s histappend
 shopt -s cmdhist
 export HISTCONTROL=erasedups:ignoreboth
 export HISTSIZE=500000
 export HISTFILESIZE=100000
-export PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
+export PROMPT_COMMAND="history -a"
 export HISTIGNORE="&:[ ]*:exit:ls:l:lt:la:lat:bg:fg:history"
 export HISTFORMAT='%F %T '
 
@@ -114,11 +90,6 @@ shopt -s dirspell
 shopt -s cdspell
 
 ### git
-export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_SHOWSTASHSTATE=true
-export GIT_PS1_SHOWUNTRACKEDFILES=true
-export GIT_PS1_SHOWUPSTREAM="verbose"
-
 alias cdr='cd $(git rev-parse --show-toplevel)'
 
 ### SDKMAN!
@@ -165,16 +136,15 @@ export PATH="${HOME}/.bin${PATH+:$PATH}"
 ### bat
 alias cat='bat'
 
-### zoxide
-eval "$(zoxide init bash --cmd cd)"
-
-### kube ps1
-source "${HOMEBREW_PREFIX}/opt/kube-ps1/share/kube-ps1.sh"
-export KUBE_PS1_SUFFIX=') '
-
 ### dotnet
 # disable sending telemetry data to MS
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 ### heroku
 eval "$(heroku autocomplete:script bash)"
+
+### starship
+eval "$(starship init bash)"
+
+### zoxide
+eval "$(zoxide init bash --cmd cd)"

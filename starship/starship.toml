@@ -1,0 +1,105 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[aws]
+disabled =true
+format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
+symbol = " "
+
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red) '
+
+[cmd_duration]
+format = '\[[⏱ $duration]($style)\]'
+
+[directory]
+read_only = " 󰌾"
+
+[docker_context]
+format = '\[[$symbol$context]($style)\]'
+symbol = " "
+
+[dotnet]
+format = '\[[$symbol($version)(🎯 $tfm)]($style)\]'
+
+[git_branch]
+format = '\[[$symbol$branch]($style)\]'
+symbol = " "
+
+[git_commit]
+format = '\[[\($hash$tag\)]($style)\]'
+tag_symbol = '  '
+
+[git_metrics]
+disabled = false
+format = '\[[+$added]($added_style)\]\[[-$deleted]($deleted_style)\]'
+
+[git_state]
+format = '\[[$state ($progress_current/$progress_total)]($style)\]'
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style))'
+ahead = '⇡${count}'
+behind = '⇣${count}'
+diverged = '⇕⇡${ahead_count}⇣${behind_count}'
+up_to_date = '✓'
+
+[golang]
+format = '\[[$symbol($version)]($style)\]'
+symbol = " "
+
+[gradle]
+format = '\[[$symbol($version)]($style)\]'
+symbol = " "
+
+[helm]
+format = '\[[$symbol($version)]($style)\]'
+
+[hostname]
+format = '\[[$ssh_symbol($hostname)]($style)\] '
+ssh_symbol = " "
+
+[java]
+format = '\[[$symbol($version)]($style)\]'
+symbol = " "
+
+[jobs]
+format = '\[[$symbol$number]($style)\]'
+
+[kotlin]
+format = '\[[$symbol($version)]($style)\]'
+symbol = " "
+
+[kubernetes]
+disabled = true
+format = '\[[$symbol$context( \($namespace\))]($style)\] '
+detect_env_vars = ['K8S_ENABLED']
+
+[lua]
+format = '\[[$symbol($version)]($style)\]'
+symbol = " "
+
+[nodejs]
+format = '\[[$symbol($version)]($style)\]'
+symbol = " "
+
+[package]
+disabled = true
+format = '\[[$symbol$version]($style)\]'
+symbol = "󰏗 "
+
+[ruby]
+format = '\[[$symbol($version)]($style)\]'
+symbol = " "
+
+[scala]
+format = '\[[$symbol($version)]($style)\]'
+symbol = " "
+
+[shell]
+format = '\[[$indicator]($style)\]'
+
+[terraform]
+format = '\[[$symbol$workspace]($style)\]'

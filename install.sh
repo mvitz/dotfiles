@@ -19,6 +19,10 @@ ln_dotconfig() {
     [[ ! -d "${HOME}/.config" ]] && mkdir "${HOME}/.config"
 
     local config="${1}"
+    if [ -f "${config}" ]; then
+        config=$(basename "${config}")
+    fi
+
     [[ -L "${HOME}/.config/${config}" ]] && unlink "${HOME}/.config/${config}"
     ln -s "${DOTFILES_DIR}/${1}" "${HOME}/.config/${config}"
 }
@@ -79,3 +83,6 @@ ln_dotconfig ghostty
 
 # tmux
 ln_dotfile tmux/tmux.conf
+
+# starship
+ln_dotconfig starship/starship.toml
