@@ -12,4 +12,43 @@ theme = "Catppuccin Macchiato"
 font-family = "FiraCode Nerd Font Mono"
 font-size = 16
 
+# rebind (almost) every tmux <prefix> + key combination to command + key within ghostty
+# see https://github.com/ghostty-org/ghostty/blob/main/src/input/key.zig
+# see https://www3.rocketsoftware.com/bluezone/help/v42/en/bzadmin/APPENDIX_C/ASCII_Character_Set.htm
+keybind = super+shift+/=text:\x1e\x3f
+keybind = super+r=text:\x1e\x72
+keybind = super+shift+;=text:\x1e\x3a
+keybind = super+/=text:\x1e\x2f
+keybind = super+q=text:\x1e\x71
+keybind = super+shift+t=text:\x1e\x54
+keybind = super+t=text:\x1e\x74
+keybind = super+,=text:\x1e\x2c
+keybind = super+shift+w=text:\x1e\x57
+keybind = super+shift+bracket_left=text:\x1e\x7b
+keybind = super+shift+bracket_right=text:\x1e\x7d
+keybind = super+digit_1=text:\x1e\x31
+keybind = super+digit_2=text:\x1e\x32
+keybind = super+digit_3=text:\x1e\x33
+keybind = super+digit_4=text:\x1e\x34
+keybind = super+digit_5=text:\x1e\x35
+keybind = super+digit_6=text:\x1e\x36
+keybind = super+digit_7=text:\x1e\x37
+keybind = super+digit_8=text:\x1e\x38
+keybind = super+digit_9=text:\x1e\x39
+keybind = super+shift+,=text:\x1e\x3c
+keybind = super+shift+.=text:\x1e\x3e
+keybind = super+d=text:\x1e\x64
+keybind = super+shift+d=text:\x1e\x44
+keybind = super+f=text:\x1e\x66
+keybind = super+shift+f=text:\x1e\x46
+keybind = super+w=text:\x1e\x77
+keybind = super+m=text:\x1e\x6d
+keybind = super+bracket_left=text:\x1e\x5b
+keybind = super+bracket_right=text:\x1e\x5d
+keybind = super+shift+digit_1=text:\x1e\x21
+# command + k -> ctrl + ^ > / -> enter copy mode
+keybind = super+k=text:\x1e\x2f
+# command + l -> ctrl + ^ > ctrl + l -> clear
+keybind = super+l=text:\x1e\x0c
+
 env = NVIM_APPNAME=nvim-overhaul
