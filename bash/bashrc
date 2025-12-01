@@ -27,6 +27,14 @@ if [ -r "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh" ]; then
   source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"
 fi
 
+### enable custom bash completions
+if [ -d "${HOME}/.bash_completions" ]; then
+  for _bash_completion in "${HOME}/.bash_completions/"*.bash; do
+    source "${_bash_completion}"
+  done
+  unset _bash_completion
+fi
+
 ### system defaults
 export EDITOR='nvim'
 export VISUAL='nvim'

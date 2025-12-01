@@ -32,6 +32,7 @@ ln_dotfile git/gitconfig
 ln_dotfile git/gitignore
 
 # bash
+ln_dotfile bash/bash_completions
 ln_dotfile bash/bash_history
 ln_dotfile bash/bash_profile
 ln_dotfile bash/bash_sessions
