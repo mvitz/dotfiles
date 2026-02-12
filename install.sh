@@ -73,7 +73,7 @@ ln_dotconfig bat
 ln_dotconfig fd
 
 # lazygit
-ln_dotfile lazygit.yml
+ln_dotconfig lazygit
 
 # nvm
 ln_dotfile nvm
