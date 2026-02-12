@@ -8,6 +8,8 @@
   excludesFile = "~/.gitignore"
   pager = delta
   quotepath = false
+[advice]
+  statusHints = false
 [mergetool]
   tool = nvimdiff
   keepBackup = false
