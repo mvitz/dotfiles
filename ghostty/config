@@ -46,6 +46,7 @@ keybind = super+m=text:\x1e\x6d
 keybind = super+bracket_left=text:\x1e\x5b
 keybind = super+bracket_right=text:\x1e\x5d
 keybind = super+shift+digit_1=text:\x1e\x21
+keybind = super+g=text:\x1e\x67
 # command + k -> ctrl + ^ > / -> enter copy mode
 keybind = super+k=text:\x1e\x2f
 # command + l -> ctrl + ^ > ctrl + l -> clear
