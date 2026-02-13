@@ -32,8 +32,7 @@ ln_dotconfig() {
 ln -s "${DOTFILES_REPO_DIR}" "${DOTFILES_DIR}"
 
 # git
-ln_dotfile git/gitconfig
-ln_dotfile git/gitignore
+ln_dotconfig git
 
 # bash
 ln_dotfile bash/bash_completions
