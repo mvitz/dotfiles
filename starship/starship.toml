@@ -40,7 +40,6 @@ symbol = " "
 [character]
 success_symbol = '[➜](green)(peach)'
 error_symbol = '[➜](red)(peach)'
-#vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
 
 [cmd_duration]
 format = '\[[⏱ $duration]($style)\]'
