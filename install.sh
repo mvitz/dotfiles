@@ -69,6 +69,9 @@ ln_dotfile bin
 # bat
 ln_dotconfig bat
 
+# eza
+ln_dotconfig eza
+
 # fd
 ln_dotconfig fd
 
