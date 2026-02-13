@@ -61,8 +61,8 @@ alias    la='l --all'
 alias   lat='lt --all'
 
 alias  grep='grep --color=auto'
-alias fgrep='grep --color=auto'
-alias egrep='grep --color=auto'
+alias egrep='grep --extended-regexp'
+alias fgrep='grep --fixed-strings'
 
 alias find='gfind'
 alias  sed='gsed'
