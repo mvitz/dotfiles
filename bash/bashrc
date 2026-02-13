@@ -83,7 +83,7 @@ export HISTFORMAT='%F %T '
 # creates the directory and changes into it
 mkcd() { [[ -n "$1" ]] && mkdir -p $1 && cd $1; }
 # don't forget the : when using scp
-scp(){ [[ "$@" =~ : ]] && command scp "$@" || echo 'You forgot the colon!'; }
+scp() { [[ "$@" =~ : ]] && command scp "$@" || echo 'You forgot the colon!'; }
 
 ### navigation
 shopt -s autocd
