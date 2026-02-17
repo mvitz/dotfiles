@@ -40,6 +40,8 @@ require("lazy").setup({
         vim.keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
       end,
     },
+    -- tmux related plugins
+    require("plugins.tmux"),
     -- UI related plugins
     require("plugins.ui"),
   },
