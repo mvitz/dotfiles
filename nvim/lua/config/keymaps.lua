@@ -17,3 +17,6 @@ vim.keymap.set("ca", "qw", ":wq") -- map qw to :wq in command mode
 
 -- easier exit of insert mode
 vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+
+-- save current file
+vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Save File" })
