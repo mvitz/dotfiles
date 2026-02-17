@@ -36,3 +36,6 @@ vim.opt.undolevels = 10000 -- keep 10.000 undo entries
 -- SPLIT
 vim.opt.splitbelow = true -- put new windows below current
 vim.opt.splitright = true -- put new windows right of current
+
+-- SUBSTITUTIONS
+vim.opt.inccommand = "split" -- preview substitutions live, as you type!
