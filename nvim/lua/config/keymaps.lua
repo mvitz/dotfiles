@@ -14,3 +14,6 @@ vim.keymap.set("n", "!", ":!") -- map ! to :! in normal mode
 -- fix some misspellings
 vim.keymap.set("ca", "ew", ":wq") -- map ew to :wq in command mode
 vim.keymap.set("ca", "qw", ":wq") -- map qw to :wq in command mode
+
+-- easier exit of insert mode
+vim.keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
