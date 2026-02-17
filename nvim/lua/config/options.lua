@@ -32,3 +32,7 @@ vim.opt.mouse = "" -- disable mouse support
 -- UNDO
 vim.opt.undofile = true -- write into undo file to prevent across restarts
 vim.opt.undolevels = 10000 -- keep 10.000 undo entries
+
+-- SPLIT
+vim.opt.splitbelow = true -- put new windows below current
+vim.opt.splitright = true -- put new windows right of current
