@@ -25,3 +25,6 @@ vim.opt.tabstop = 2 -- display tab as two spaces
 -- SCROLLING
 vim.opt.sidescrolloff = 11 -- start scrolling right/left when we're 11 columns away from margins
 vim.opt.scrolloff = 8 -- start scrolling up/down when we're 8 lines away from margins
+
+-- MOUSE
+vim.opt.mouse = "" -- disable mouse support
