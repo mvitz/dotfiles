@@ -1,1 +1,44 @@
+-- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "--branch=stable",
+    lazyrepo,
+    lazypath,
+  })
+  if vim.v.shell_error ~= 0 then
+    vim.api.nvim_echo({
+      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+      { out, "WarningMsg" },
+      { "\nPress any key to exit..." },
+    }, true, {})
+    vim.fn.getchar()
+    os.exit(1)
+  end
+end
+vim.opt.rtp:prepend(lazypath)
+
+-- load basic configuration
 require("config")
+
+-- load plugins via lazy.nvim
+require("lazy").setup({
+  checker = {
+    enabled = true, -- automatically check for plugin updates
+  },
+  spec = {
+    -- lazy.nvim itself for updating
+    {
+      -- https://github.com/folke/lazy.nvim
+      "folke/lazy.nvim",
+      tag = "stable",
+      init = function(_)
+        vim.keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
+      end,
+    },
+  },
+})
