@@ -7,3 +7,6 @@ vim.keymap.set("", "<Left>", "<NOP>") -- disable Left
 -- enter command mode with single keystroke
 vim.keymap.set("n", ";", ":") -- map ; to : in normal mode
 vim.keymap.set("n", ":", ";") -- map : to ; in normal mode
+
+-- start external command with single keystroke
+vim.keymap.set("n", "!", ":!") -- map ! to :! in normal mode
