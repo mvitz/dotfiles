@@ -28,3 +28,7 @@ vim.opt.scrolloff = 8 -- start scrolling up/down when we're 8 lines away from ma
 
 -- MOUSE
 vim.opt.mouse = "" -- disable mouse support
+
+-- UNDO
+vim.opt.undofile = true -- write into undo file to prevent across restarts
+vim.opt.undolevels = 10000 -- keep 10.000 undo entries
