@@ -40,5 +40,7 @@ require("lazy").setup({
         vim.keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
       end,
     },
+    -- UI related plugins
+    require("plugins.ui"),
   },
 })
