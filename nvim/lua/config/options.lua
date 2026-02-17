@@ -10,3 +10,7 @@ vim.opt.listchars = {
 }
 vim.opt.number = true -- show line numbers
 vim.opt.relativenumber = true -- show relative line numbers
+
+-- SEARCH
+vim.opt.ignorecase = true -- ignore case when searching
+vim.opt.smartcase = true -- don't ignore case when pattern contains an upper-case character
