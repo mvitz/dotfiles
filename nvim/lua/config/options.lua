@@ -39,3 +39,6 @@ vim.opt.splitright = true -- put new windows right of current
 
 -- SUBSTITUTIONS
 vim.opt.inccommand = "split" -- preview substitutions live, as you type!
+
+-- MISC
+vim.opt.signcolumn = "yes" -- keep signcolumn on by default
