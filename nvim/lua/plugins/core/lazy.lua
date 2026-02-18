@@ -10,6 +10,7 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     optional = true,
+    opts_extend = { "extensions" },
     opts = {
       extensions = { "lazy" },
     },
