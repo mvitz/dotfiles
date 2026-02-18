@@ -1,10 +1,9 @@
+-- https://github.com/akinsho/bufferline.nvim
 return {
-  -- https://github.com/akinsho/bufferline.nvim
   "akinsho/bufferline.nvim",
   version = "*",
   dependencies = { "nvim-mini/mini.icons" },
   event = "VeryLazy",
-  after = "catppuccin",
   opts = {
     options = {
       always_show_bufferline = false,

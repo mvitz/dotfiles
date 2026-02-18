@@ -1,5 +1,5 @@
+-- https://github.com/nvim-lualine/lualine.nvim
 return {
-  -- https://github.com/nvim-lualine/lualine.nvim
   "nvim-lualine/lualine.nvim",
   dependencies = { "nvim-mini/mini.icons" },
   event = "VeryLazy",
@@ -34,9 +34,8 @@ return {
         },
       },
     },
-    extensions = { "lazy" },
   },
-  init = function()
+  init = function(_)
     vim.opt.statusline = " " -- set an empty statusline till lualine loads
     vim.opt.showmode = false -- don't show the mode, since it's already in the status line
   end,

@@ -31,18 +31,8 @@ require("lazy").setup({
     enabled = true, -- automatically check for plugin updates
   },
   spec = {
-    -- lazy.nvim itself for updating
-    {
-      -- https://github.com/folke/lazy.nvim
-      "folke/lazy.nvim",
-      tag = "stable",
-      init = function(_)
-        vim.keymap.set("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
-      end,
-    },
-    -- tmux related plugins
-    require("plugins.tmux"),
-    -- UI related plugins
-    require("plugins.ui"),
+    { import = "plugins.core" },
+    { import = "plugins.colorscheme" },
+    { import = "plugins.ui" },
   },
 })

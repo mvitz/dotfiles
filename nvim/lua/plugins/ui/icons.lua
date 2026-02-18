@@ -1,5 +1,5 @@
+-- https://github.com/nvim-mini/mini.icons
 return {
-  -- https://github.com/nvim-mini/mini.icons
   "nvim-mini/mini.icons",
   version = false,
   lazy = true,
