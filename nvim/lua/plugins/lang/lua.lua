@@ -2,7 +2,6 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     optional = true,
-    opts_extend = { "ensure_installed" },
     opts = {
       ensure_installed = {
         "lua",
@@ -14,7 +13,6 @@ return {
   {
     "stevearc/conform.nvim",
     optional = true,
-    opts_extend = { "formatters_by_ft" },
     opts = {
       formatters_by_ft = {
         lua = { "stylua" },
@@ -22,11 +20,51 @@ return {
     },
   },
   {
+    "neovim/nvim-lspconfig",
+    optional = true,
+    opts = {
+      servers = {
+        lua_ls = {
+          settings = {
+            Lua = {
+              codeLens = {
+                enable = true,
+              },
+              completion = {
+                callSnippet = "Replace",
+              },
+              doc = {
+                privateName = { "^_" },
+              },
+              hint = {
+                enable = true,
+                setType = false,
+                paramType = true,
+                paramName = "Disable",
+                semicolon = "Disable",
+                arrayIndex = "Disable",
+              },
+              telemetry = {
+                enable = false,
+              },
+              workspace = {
+                checkThirdParty = false,
+                library = {
+                  vim.env.VIMRUNTIME,
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+  {
     "WhoIsSethDaniel/mason-tool-installer.nvim",
     optional = true,
-    opts_extend = { "ensure_installed" },
     opts = {
       ensure_installed = {
+        "lua_ls",
         "stylua",
       },
     },
