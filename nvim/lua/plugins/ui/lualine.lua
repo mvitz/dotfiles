@@ -12,6 +12,15 @@ return {
       lualine_b = { "branch" },
       lualine_c = {
         {
+          "diagnostics",
+          symbols = {
+            error = " ",
+            warn = " ",
+            hint = " ",
+            info = " ",
+          },
+        },
+        {
           "filetype",
           icon_only = true,
           separator = "",
