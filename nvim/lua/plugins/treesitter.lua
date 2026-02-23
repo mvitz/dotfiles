@@ -6,6 +6,7 @@ return {
     version = false, -- last release is way too old and doesn't work on Windows
     lazy = false,
     build = ":TSUpdate",
+    opts_extend = { "ensure_installed" },
     opts = {
       ensure_installed = {
         "bash",
@@ -24,11 +25,6 @@ return {
         "gitattributes",
         "gitcommit",
         "gitignore",
-        "go",
-        "gomod",
-        "gosum",
-        "gotmpl",
-        "gowork",
         "gpg",
         "groovy",
         "hcl",
