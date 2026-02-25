@@ -12,8 +12,8 @@
   "mason.nvim": { "branch": "main", "commit": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65" },
   "mini.completion": { "branch": "main", "commit": "4f94cafdeef02bf3ef9997cd6862658801caa22c" },
   "mini.icons": { "branch": "main", "commit": "5b9076dae1bfbe47ba4a14bc8b967cde0ab5d77e" },
-  "nvim-lspconfig": { "branch": "master", "commit": "5a855bcfec7973767a1a472335684bbd71d2fa2b" },
-  "nvim-treesitter": { "branch": "main", "commit": "dc42c209f3820bdfaae0956f15de29689aa6b451" },
+  "nvim-lspconfig": { "branch": "master", "commit": "ab5139c99df944479e5a26495a37840fcbb1d512" },
+  "nvim-treesitter": { "branch": "main", "commit": "c6d295e96698b14c344a62a3abcf64139268c56b" },
   "snacks.nvim": { "branch": "main", "commit": "fe7cfe9800a182274d0f868a74b7263b8c0c020b" },
   "vim-tmux-navigator": { "branch": "master", "commit": "e41c431a0c7b7388ae7ba341f01a0d217eb3a432" },
   "which-key.nvim": { "branch": "main", "commit": "3aab2147e74890957785941f0c1ad87d0a44c15a" }
