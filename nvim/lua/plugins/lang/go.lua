@@ -29,7 +29,11 @@ return {
     optional = true,
     opts = {
       formatters_by_ft = {
-        go = { "goimports", "gofumpt" },
+        go = {
+          "golangci-lint",
+          "goimports",
+          "gofumpt",
+        },
       },
     },
   },
@@ -75,6 +79,7 @@ return {
             },
           },
         },
+        ["golangci_lint_ls"] = {},
       },
     },
   },
@@ -83,8 +88,10 @@ return {
     optional = true,
     opts = {
       ensure_installed = {
-        "goimports",
         "gofumpt",
+        "goimports",
+        "golangci-lint",
+        "golangci-lint-langserver",
         "gopls",
       },
     },
