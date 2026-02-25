@@ -21,6 +21,7 @@ keybind = super+shift+;=text:\x1e\x3a
 keybind = super+/=text:\x1e\x2f
 keybind = super+q=text:\x1e\x71
 keybind = super+shift+t=text:\x1e\x54
+keybind = super+shift+r=text:\x1e\x52
 keybind = super+t=text:\x1e\x74
 keybind = super+,=text:\x1e\x2c
 keybind = super+shift+w=text:\x1e\x57
