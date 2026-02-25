@@ -9,6 +9,7 @@ return {
         dark = "macchiato",
         light = "latte",
       },
+      default_integrations = false,
     },
     config = function(_, opts)
       require("catppuccin").setup(opts)

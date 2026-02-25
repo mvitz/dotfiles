@@ -1,21 +1,32 @@
 -- https://github.com/lewis6991/gitsigns.nvim
 return {
-  "lewis6991/gitsigns.nvim",
-  opts = {
-    signs = {
-      add = { text = "▎" },
-      change = { text = "▎" },
-      delete = { text = "" },
-      topdelete = { text = "" },
-      changedelete = { text = "▎" },
-      untracked = { text = "▎" },
+  {
+    "lewis6991/gitsigns.nvim",
+    opts = {
+      signs = {
+        add = { text = "▎" },
+        change = { text = "▎" },
+        delete = { text = "" },
+        topdelete = { text = "" },
+        changedelete = { text = "▎" },
+        untracked = { text = "▎" },
+      },
+      signs_staged = {
+        add = { text = "▎" },
+        change = { text = "▎" },
+        delete = { text = "" },
+        topdelete = { text = "" },
+        changedelete = { text = "▎" },
+      },
     },
-    signs_staged = {
-      add = { text = "▎" },
-      change = { text = "▎" },
-      delete = { text = "" },
-      topdelete = { text = "" },
-      changedelete = { text = "▎" },
+  },
+  {
+    "catppuccin/nvim",
+    optional = true,
+    opts = {
+      integrations = {
+        gitsigns = true,
+      },
     },
   },
 }

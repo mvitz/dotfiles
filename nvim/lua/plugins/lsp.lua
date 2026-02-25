@@ -52,4 +52,18 @@ return {
       end
     end,
   },
+  {
+    "catppuccin/nvim",
+    optional = true,
+    opts = {
+      lsp_styles = {
+        underlines = {
+          errors = { "undercurl" },
+          hints = { "undercurl" },
+          warnings = { "undercurl" },
+          information = { "undercurl" },
+        },
+      },
+    },
+  },
 }

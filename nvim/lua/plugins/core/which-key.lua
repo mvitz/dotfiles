@@ -1,34 +1,45 @@
 -- https://github.com/folke/which-key.nvim
 return {
-  "folke/which-key.nvim",
-  event = "VeryLazy",
-  opts = {
-    preset = "helix",
-    spec = {
-      {
-        mode = { "n", "x" },
-        { "<leader>c", group = "code" },
-        { "<leader>q", group = "quit/session" },
-        { "[", group = "prev" },
-        { "]", group = "next" },
-        { "g", group = "goto" },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      preset = "helix",
+      spec = {
         {
-          "<leader>b",
-          group = "buffer",
-          expand = function()
-            return require("which-key.extras").expand.buf()
-          end,
+          mode = { "n", "x" },
+          { "<leader>c", group = "code" },
+          { "<leader>q", group = "quit/session" },
+          { "[", group = "prev" },
+          { "]", group = "next" },
+          { "g", group = "goto" },
+          {
+            "<leader>b",
+            group = "buffer",
+            expand = function()
+              return require("which-key.extras").expand.buf()
+            end,
+          },
         },
       },
     },
+    keys = {
+      {
+        "<leader>?",
+        function()
+          require("which-key").show({ global = false })
+        end,
+        desc = "Buffer Keymaps (which-key)",
+      },
+    },
   },
-  keys = {
-    {
-      "<leader>?",
-      function()
-        require("which-key").show({ global = false })
-      end,
-      desc = "Buffer Keymaps (which-key)",
+  {
+    "catppuccin/nvim",
+    optional = true,
+    opts = {
+      integrations = {
+        which_key = true,
+      },
     },
   },
 }

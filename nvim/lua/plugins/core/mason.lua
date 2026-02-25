@@ -24,6 +24,15 @@ return {
     },
   },
   {
+    "catppuccin/nvim",
+    optional = true,
+    opts = {
+      integrations = {
+        mason = true,
+      },
+    },
+  },
+  {
     "nvim-lualine/lualine.nvim",
     optional = true,
     opts_extend = { "extensions" },
