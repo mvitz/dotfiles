@@ -42,3 +42,6 @@ vim.opt.inccommand = "split" -- preview substitutions live, as you type!
 
 -- MISC
 vim.opt.signcolumn = "yes" -- keep signcolumn on by default
+
+-- SWAP
+vim.opt.swapfile = false -- do not create a swapfile
