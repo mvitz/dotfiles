@@ -8,6 +8,7 @@ return {
       {
         mode = { "n", "x" },
         { "<leader>c", group = "code" },
+        { "<leader>q", group = "quit/session" },
         { "[", group = "prev" },
         { "]", group = "next" },
         { "g", group = "goto" },

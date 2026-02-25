@@ -31,3 +31,6 @@ end, { expr = true, desc = "Escape and Clear hlsearch" })
 vim.keymap.set({ "n", "x" }, "<leader>y", '"+y', { desc = "Copy to system clipboard" })
 vim.keymap.set({ "n", "x" }, "<leader>p", '"+p', { desc = "Paste from system clipboard after the cursor position" })
 vim.keymap.set({ "n", "x" }, "<leader>P", '"+P', { desc = "Paste from system clipboard before the cursor position" })
+
+-- quit
+vim.keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
