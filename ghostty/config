@@ -52,5 +52,3 @@ keybind = super+g=text:\x1e\x67
 keybind = super+k=text:\x1e\x2f
 # command + l -> ctrl + ^ > ctrl + l -> clear
 keybind = super+l=text:\x1e\x0c
-
-env = NVIM_APPNAME=nvim-overhaul
