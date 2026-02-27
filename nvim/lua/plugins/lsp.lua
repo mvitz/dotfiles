@@ -39,9 +39,45 @@ return {
           },
         },
       },
+      keys = {
+        { "gd", vim.lsp.buf.definition, desc = "Goto Definition", has = "definition" },
+        { "gr", vim.lsp.buf.references, desc = "References", nowait = true },
+        { "gI", vim.lsp.buf.implementation, desc = "Goto Implementation" },
+        { "gy", vim.lsp.buf.type_definition, desc = "Goto T[y]pe Definition" },
+        { "gD", vim.lsp.buf.declaration, desc = "Goto Declaration" },
+        {
+          "K",
+          function()
+            return vim.lsp.buf.hover()
+          end,
+          desc = "Hover",
+        },
+        { "<leader>ca", vim.lsp.buf.code_action, desc = "Code Action", mode = { "n", "x" }, has = "codeAction" },
+        { "<leader>cr", vim.lsp.buf.rename, desc = "Rename", has = "rename" },
+      },
     },
     config = function(_, opts)
       vim.diagnostic.config(opts.diagnostics)
+
+      for _, keySpec in pairs(opts.keys) do
+        local key = vim.deepcopy(keySpec)
+        key.mode = key.mode or "n"
+
+        local mode = key.mode
+        local lhs = key[1]
+        local rhs = key[2]
+
+        key[1] = nil
+        key[2] = nil
+
+        if key.has then
+          local has = key.has
+          local method = has:find("/") and has or ("textDocument/" .. has)
+          key.lsp = { method }
+        end
+
+        Snacks.keymap.set(mode, lhs, rhs, key)
+      end
 
       vim.lsp.config("*", opts.servers["*"])
       for server, server_opts in pairs(opts.servers) do
