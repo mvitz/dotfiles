@@ -10,6 +10,7 @@ return {
           mode = { "n", "x" },
           { "<leader>c", group = "code" },
           { "<leader>q", group = "quit/session" },
+          { "<leader>u", group = "ui" },
           { "[", group = "prev" },
           { "]", group = "next" },
           { "g", group = "goto" },
