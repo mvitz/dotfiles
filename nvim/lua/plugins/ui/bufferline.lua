@@ -7,6 +7,14 @@ return {
   opts = {
     options = {
       always_show_bufferline = false,
+      diagnostics = "nvim_lsp",
+      diagnostics_indicator = function(_, _, diag)
+        local ret = (diag.error and " " .. diag.error .. " " or "")
+          .. (diag.warning and " " .. diag.warning or "")
+        return vim.trim(ret)
+      end,
+      show_buffer_close_icons = false,
+      show_close_icon = false,
     },
   },
   keys = {
