@@ -8,6 +8,7 @@ return {
       bigfile = {
         enabled = true,
       },
+      explorer = {},
       picker = {},
       quickfile = {
         enabled = true,
@@ -22,6 +23,15 @@ return {
         end,
         desc = "Delete Buffer",
       },
+      -- explorer
+      {
+        "<leader>fe",
+        function()
+          Snacks.explorer()
+        end,
+        desc = "Explorer Snacks",
+      },
+      { "<leader>e", "<leader>fe", desc = "Explorer Snacks", remap = true },
       -- picker
       {
         "<leader>,",
