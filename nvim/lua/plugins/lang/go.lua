@@ -96,4 +96,18 @@ return {
       },
     },
   },
+  {
+    "nvim-neotest/neotest",
+    optional = true,
+    dependencies = {
+      "fredrikaverpil/neotest-golang",
+    },
+    opts = {
+      adapters = {
+        ["neotest-golang"] = function()
+          return require("neotest-golang")({})
+        end,
+      },
+    },
+  },
 }
